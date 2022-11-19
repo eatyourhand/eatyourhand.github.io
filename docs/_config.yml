@@ -4,6 +4,7 @@ url: https://강준혁.com
 paginate: 1
 baseurl: ""
 permalink: pretty
+future: true
 
 # Gems
 plugins:
