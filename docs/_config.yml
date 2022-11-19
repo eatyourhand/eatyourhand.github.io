@@ -45,8 +45,5 @@ nav:
   - title: Blog
     url: /archive
     
-  - title: Search
-    url: /search
-
   - title: About
     url: /about  
