@@ -33,9 +33,9 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Mark Otto
-  url: https://twitter.com/mdo
-  email: markdotto@gmail.com
+  name: 강준혁 
+  url: https://twitter.com/Orangevskimchi
+  email: bigbug77@outlook.kr
 
 # Custom vars
 version: 3.0.0
@@ -44,6 +44,9 @@ version: 3.0.0
 nav:
   - title: Blog
     url: /archive
+    
+  - title: Search
+    url: /search
 
   - title: About
-    url: /about
+    url: /about  
