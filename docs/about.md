@@ -8,4 +8,4 @@ title: About
 </p>
 
 
-나를 Twitter에서 팔로우하라. [@Orangevskimchi](https://twitter.com/).
+나를 Twitter에서 팔로우하라. [@Orangevskimchi](https://twitter.com/Orangevskimchi).
