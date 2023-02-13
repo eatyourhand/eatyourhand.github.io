@@ -27,6 +27,7 @@ input.addEventListener("keydown", (event) => {
   } else if (event.key === "Enter" && input.value.toLowerCase() === "rick" || input.value.toLowerCase() === "rickroll" || input.value ==="갸차") {
     window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
   } else if (event.key === "Enter" && input.value === "이시원") {
+    var audio = new Audio('newthatI.mp3');
     audio.play();
     window.location.href = "https://cdn.discordapp.com/attachments/835781870821965845/1074715920896897034/dabadeedabad0.png";
   }
