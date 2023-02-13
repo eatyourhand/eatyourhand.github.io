@@ -12,7 +12,7 @@ input.addEventListener("keydown", (event) => {
     input.style.display = "none";
     for (let i = 0; i < 800; i++) {
       const angle = Math.random() * 2 * Math.PI;
-      const distance = Math.random() * canvas.width / 2;
+      const distance = Math.random() * canvas.width / 10;
       particles.push({
         x: canvas.width / 10,
         y: canvas.height / 10,
