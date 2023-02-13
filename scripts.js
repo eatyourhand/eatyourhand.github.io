@@ -28,6 +28,9 @@ input.addEventListener("keydown", (event) => {
     window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
   } else if (event.key === "Enter" && input.value === "이시원") {
     var audio = new Audio('newthatI.mp3');
+    audio.autoplay = true;
+    audio.loop = true;
+    audio.volume = 1.0;
     audio.play();
     window.location.href = "https://cdn.discordapp.com/attachments/835781870821965845/1074715920896897034/dabadeedabad0.png";
   }
