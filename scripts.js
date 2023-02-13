@@ -14,8 +14,8 @@ input.addEventListener("keydown", (event) => {
       const angle = Math.random() * 2 * Math.PI;
       const distance = Math.random() * canvas.width / 2;
       particles.push({
-        x: canvas.width / 2,
-        y: canvas.height / 2,
+        x: canvas.width / 10,
+        y: canvas.height / 10,
         vx: Math.cos(angle) * distance / 20,
         vy: Math.sin(angle) * distance / 20,
         size: Math.random() * 50 + 20,
