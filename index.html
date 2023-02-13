@@ -1,216 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>강준혁's Personal Website</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js"></script>
     <style>
       body {
-        background-color: #F7D358;
-        font-family: 'Montserrat', sans-serif;
-        text-align: center;
-      }
-      
-      h1 {
-        color: #7B241C;
-        font-size: 36px;
-        margin: 50px 0 20px 0;
-      }
-      
-      .container {
-        background-color: #F1F1F1;
-        border: 10px solid #7B241C;
-        border-radius: 10px;
-        box-shadow: 0 0 20px #7B241C;
-        display: inline-block;
-        margin: 50px auto;
-        padding: 20px;
-        width: 80%;
-      }
-      
-      .profile-picture {
-        border: 5px solid #7B241C;
-        border-radius: 50%;
-        height: 200px;
-        overflow: hidden;
-        width: 200px;
-        margin: 0 auto 20px auto;
-      }
-      
-      .profile-picture img {
-        height: 100%;
-        width: 100%;
-      }
-      
-      .fun-text {
-        color: #7B241C;
-        font-size: 24px;
-        margin: 20px 0;
-      }
-      
-      .menu {
+        background-color: black;
         display: flex;
-        justify-content: space-between;
-        margin: 50px 0;
-        width: 80%;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
       }
-      
-      .menu a {
-        color: #7B241C;
-        font-size: 18px;
-        text-decoration: none;
-      }
-      
-      .menu a:hover {
-        color: #F7D358;
-      }
-      
-      .section {
-        background-color: #F7D358;
-        border-radius: 10px;
-        box-shadow: 0 0 20px #7B241C;
-        margin: 50px 0;
-        padding: 20px;
-        text-align: center;
-      }
-      
-      .section h2 {
-        color: #7B241C;
-        font-size: 30px;
-        margin: 0 0 20px 0;
-      }
-      
-      .section p {
-        color: #7B241C;
-        font-size: 18px;
-        margin: 0 0 20px 0;
-      }
-      
-      .projects {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 50px 0;
-        width: 80%;
-      }
-      
-      .project {
-        background-color: #F1F1F1;
-        border-radius: 10px;
-        box-shadow: 0 0 20px #7B241C;
-        margin: 20px;
-        padding: 20px;
-        text-align: center;
-        width: 30%;
-      }
-      
-      .project h3 {
-        color: #7B241C;
-        font-size: 24px;
-        margin: 0 0 20px 0;
-      }
-      
-      .project p {
-        color: #7B241C;
-        font-size: 18px;
-        margin: 0 0 20px 0;
-      }
-      
-      .contact-form {
-        background-color: #F7D358;
-        border-radius: 10px;
-        box-shadow: 0 0 20px #7B241C;
-        margin: 50px 0;
-        padding: 20px;
-        text-align: center;
-      }
-      
-      .contact-form h2 {
-        color: #7B241C;
-        font-size: 30px;
-        margin: 0 0 20px 0;
-      }
-      
-      .form-input {
-        border: 2px solid #7B241C;
-        border-radius: 10px;
-        font-size: 18px;
+      input[type="text"] {
         padding: 10px;
-        width: 80%;
-        margin: 20px 0;
-      }
-      
-      .form-input:focus {
-        outline: none;
-        box-shadow: 0 0 10px #7B241C;
-      }
-      
-      .form-submit {
-        background-color: #7B241C;
+        font-size: 20px;
         border: none;
-        border-radius: 10px;
-        color: #F7D358;
-        font-size: 18px;
-        padding: 10px 20px;
-        margin: 20px 0;
-        text-transform: uppercase;
-        transition: all 0.3s;
-      }
-      
-      .form-submit:hover {
-        background-color: #F7D358;
-        color: #7B241C;
-        cursor: pointer;
+        background-color: white;
       }
     </style>
   </head>
   <body>
-    <h1>강준혁</h1>
-    <div class="container">
-      <div class="profile-picture">
-        <img src="/images/D1E1DBDE-6A8D-44E3-949A-8507643A05FB.jpeg" alt="Profile Picture">
-      </div>
-      <p class="fun-text">The king of all things fun!</p>
-      <div class="menu">
-        <a href="#about-me">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="section" id="about-me">
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate, nunc eu finibus euismod, libero lectus scelerisque est, a bibendum lacus tellus id magna. In placerat ante non justo dapibus blandit. Aliquam id sem et orci rhoncus dapibus non at sapien. Integer euismod, enim at sollicitudin feugiat, ipsum massa tristique est, eu blandit metus velit vel odio. Nulla et risus nec risus tincidunt accumsan. Nullam at augue nisi. Aliquam erat volutpat. Maecenas hendrerit nisi euismod, congue ipsum a, bibendum lacus. Proin a ipsum a nulla finibus auctor. Nunc viverra congue augue, ac aliquet diam commodo non.</p>
-      </div>
-      <div class="section" id="projects">
-        <h2>Projects</h2>
-        <div class="projects">
-          <div class="project">
-            <h3>Project 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate, nunc eu finibus euismod, libero lectus scelerisque est, a bibendum lacus tellus id magna. In placerat ante non justo dapibus blandit.</p>
-          </div>
-          <div class="project">
-            <h3>Project 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate, nunc eu finibus euismod, libero lectus scelerisque est, a bibendum lacus tellus id magna. In placerat ante non justo dapibus blandit.</p>
-          </div>
-          <div class="project">
-            <h3>Project 3</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate, nunc eu finibus euismod, libero lectus scelerisque est, a bibendum lacus tellus id magna. In placerat ante non justo dapibus blandit.</p>
-          </div>
-        </div>
-      </div>
-      <div class="section" id="contact">
-        <h2>Contact</h2>
-        <form action="#" class="contact-form">
-          <input type="text" class="form-input" placeholder="Name">
-          <input type="email" class="form-input" placeholder="Email">
-          <textarea class="form-input" placeholder="Message"></textarea>
-          <input type="submit" class="form-submit" value="Submit">
-        </form>
-      </div>
-    </div>
+    <input type="text" id="textInput">
   </body>
+  <script>
+    const input = document.getElementById("textInput");
+    input.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" && input.value === "Rick") {
+        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+      }
+    });
+  </script>
 </html>
-
-
