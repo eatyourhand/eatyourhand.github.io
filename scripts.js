@@ -9,18 +9,20 @@ input.addEventListener("keydown", (event) => {
     explosion = true;
     input.style.display = "none";
     for (let i = 0; i < 800; i++) {
+      const angle = Math.random() * 2 * Math.PI;
+      const distance = Math.random() * canvas.width / 2;
       particles.push({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        vx: (Math.random() - 0.5) * 20,
-        vy: (Math.random() - 0.5) * 20,
+        x: canvas.width / 2,
+        y: canvas.height / 2,
+        vx: Math.cos(angle) * distance / 20,
+        vy: Math.sin(angle) * distance / 20,
         size: Math.random() * 50 + 20,
         color: `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(
           Math.random() * 256
         )}, ${Math.floor(Math.random() * 256)})`,
       });
     }
-  } else if (event.key === "Enter" && input.value.toLowerCase() === "rick" || input.value.toLowerCase() === "rickroll" || input.value === "갸차") {
+  } else if (event.key === "Enter" && input.value.toLowerCase() === "rick" || input.value.toLowerCase() === "rickroll" || input.value ==="갸차") {
     window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
   } else if (event.key === "Enter" && input.value === "이시원") {
     window.location.href = "https://cdn.discordapp.com/attachments/835781870821965845/1074715920896897034/dabadeedabad0.png";
