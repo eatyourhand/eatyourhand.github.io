@@ -1,4 +1,9 @@
 var input = document.getElementById("input");
+const input = document.getElementById("textInput");
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+let explosion = false;
+let particles = [];
 
 input.addEventListener("keyup", function(event) {
   if (event.key === "Enter") {
