@@ -35,37 +35,5 @@
     <input type="text" id="textInput">
     <canvas id="canvas" width="100vw" height="100vh"></canvas>
   </body>
-  <script>
-    const input = document.getElementById("textInput");
-    const canvas = document.getElementById("canvas");
-    const ctx = canvas.getContext("2d");
-    let explosion = false;
-  
-    input.addEventListener("keydown", (event) => {
-      if (event.key === "Enter" && input.value === "강준혁") {
-        explosion = true;
-        input.style.display = "none";
-      } else if (event.key === "Enter" && (input.value.toLowerCase() === "rick" || input.value === "이시원")) {
-        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-      }
-    });
-  
-    function animate() {
-      if (!explosion) {
-        requestAnimationFrame(animate);
-        return;
-      }
-  
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-  
-      ctx.beginPath();
-      ctx.arc(canvas.width / 2, canvas.height / 2, 50, 0, 2 * Math.PI);
-      ctx.fillStyle = "red";
-      ctx.fill();
-  
-      requestAnimationFrame(animate);
-    }
-  
-    animate();
-  </script>
+  <script src="scripts.js"></script>
 </html>
