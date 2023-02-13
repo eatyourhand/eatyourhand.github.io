@@ -23,7 +23,7 @@
   <script>
     const input = document.getElementById("textInput");
     input.addEventListener("keydown", (event) => {
-      if (event.key === "Enter" && input.value === "Rick") {
+      if (event.key === "Enter" && input.value.toLowerCase() === "rick") {
         window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
       }
     });
