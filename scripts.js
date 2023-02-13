@@ -1,22 +1,14 @@
-var input = document.getElementById("textInput");
 const input = document.getElementById("textInput");
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 let explosion = false;
 let particles = [];
 
-input.addEventListener("keyup", function(event) {
-  if (event.key === "Enter") {
-    if (input.value.toLowerCase() === "rick" || input.value.toLowerCase() === "rickroll" || input.value === "갸차") {
-      window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-    } else if (input.value === "이시원") {
-      var audio = new Audio('newthatI.mp3');
-      audio.play();
-      window.open("https://cdn.discordapp.com/attachments/835781870821965845/1074715920896897034/dabadeedabad0.png");
-    } else if (input.value === "강준혁") {
-      explosion = true;
-      input.style.display = "none";
-      for (let i = 0; i < 800; i++) {
+input.addEventListener("keydown", (event) => {
+  if (event.key === "Enter" && input.value === "강준혁") {
+    explosion = true;
+    input.style.display = "none";
+    for (let i = 0; i < 800; i++) {
       const angle = Math.random() * 2 * Math.PI;
       const distance = Math.random() * canvas.width / 2;
       particles.push({
@@ -28,11 +20,15 @@ input.addEventListener("keyup", function(event) {
         color: `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(
           Math.random() * 256
         )}, ${Math.floor(Math.random() * 256)})`,
-      });      
+      });
     }
+  } else if (event.key === "Enter" && input.value.toLowerCase() === "rick" || input.value.toLowerCase() === "rickroll" || input.value ==="갸차") {
+    window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+  } else if (event.key === "Enter" && input.value === "이시원") {
+    window.location.href = "https://cdn.discordapp.com/attachments/835781870821965845/1074715920896897034/dabadeedabad0.png";
   }
 });
-  
+
 function animate() {
   if (!explosion) {
     requestAnimationFrame(animate);
