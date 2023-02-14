@@ -26,7 +26,7 @@ input.addEventListener("keydown", (event) => {
     }
   } else if (event.key === "Enter" && input.value.toLowerCase() === "rick" || input.value.toLowerCase() === "rickroll" || input.value ==="갸차") {
     window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-  } else if (event.key === "Enter" && input.value === "이시원") {
+  } else if (event.key === "Enter" && input.value === "이시원" || input.value === "박주혁") {
     var audio = new Audio('newthatI.mp3');
     audio.autoplay = true;
     audio.loop = true;
